@@ -108,6 +108,7 @@ async function main(){
     // ...the job conclusion is failure, we mark as failed and set the icon
     if(job.conclusion == "failure") {
       workflow_failure = true
+      workflow_success = false
       job_status_icon = "\u2717" // BALLOT X
     }
     // Create a new field for this job
